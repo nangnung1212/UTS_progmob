@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textsize="50dp"
+            android:text="Matakuliah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginleft="15dp"
+        android:background="@drawable/background_form_cari"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:hint="Cari Matakuliah . . ."
+        android:hintTextColor="#212121"
+        android:paddingLeft="45dp"
+        tools:ignore="TextContrastCheck" />
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:background="#DFDFDF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ListView
+        android:layout_width="387dp"
+        android:layout_height="1349dp">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"
+        android:id="@+id/tambahmatakuliah"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+</LinearLayout>
